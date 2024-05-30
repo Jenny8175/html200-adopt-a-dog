@@ -9,6 +9,7 @@
     <h1>Pet Adoption Application</h1>
 
     <form method="Get">
+
       <label>Your name:
         <input type="text" name="applicationName">
       </label>
@@ -18,7 +19,7 @@
       </label>
 
       <!-- the other label syntax -->
-      <label for="city">What city are you in?</label>
+      <label for="city">City you live in:</label>
       <input id="city" type="text"
       name="applicationCity">
 
@@ -30,26 +31,26 @@
         <textarea name="applicantReason" rows="4" cols="50"></textarea>
       </label>
 
-      <fieldset>
-        <legend>What types of dogs are you interested in?</legend>
-        <label>Large Dogs
-          <input type="checkbox" name="type"
-          value="large dogs">
+      <fieldset class="checkbox">What types of dog(s) are you interested in?
+        
+        <label>
+          <input type="checkbox" name="type" value="large dogs">Large Dogs          
+          <span class="checkmark"></span>
         </label>
 
-         <label>Medium Dogs
-          <input type="checkbox" name="type"
-          value="medium dogs">
+         <label>
+          <input type="checkbox" name="type" value="medium dogs">Medium Dogs
+          <span class="checkmark"></span>
         </label>
 
-        <label>Small Dogs
-          <input type="checkbox" name="type"
-          value="small dogs">
+        <label>
+          <input type="checkbox" name="type" value="small dogs">Small Dogs
+          <span class="checkmark"></span>
         </label>
  
-        <label>Hypoallergenic Dogs
-          <input type="checkbox" name="type"
-          value="hypoallergenic dogs">
+        <label>
+          <input type="checkbox" name="type" value="hypoallergenic dogs">Hypoallergenic Dogs
+          <span class="checkmark"></span>
         </label>
       </fieldset>
 
